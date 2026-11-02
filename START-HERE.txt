@@ -1,0 +1,45 @@
+SY 5 — smaller website ready for GitHub Pages
+
+This is a complete, already-built website. No installation or build command is needed.
+All 149 book entries (144 unique PDFs, 12,265 pages) and all 20 recordings are included.
+The complete website is 423 MiB, reduced from 971 MiB (56% smaller).
+The largest individual file is 24.31 MiB, below GitHub's 25 MiB browser limit.
+
+UPLOAD TO GITHUB
+1. Download and extract SY5-GitHub-ready.zip on your computer.
+2. In your GitHub repository, use Add file > Upload files.
+3. Upload the EXTRACTED files and folders. index.html must be at the repository's root,
+   alongside assets, books, audio and pdfjs. Keep all folder names and file names.
+   Do not upload the ZIP itself: GitHub does not extract ZIPs into a website.
+4. GitHub allows up to 100 files per browser upload. Upload in batches if needed.
+   The books folder needs two batches. The pdfjs/cmaps folder also needs batches.
+   GitHub Desktop can upload the extracted folder without the browser's 100-file batch limit.
+5. Include .nojekyll. On Mac, press Command + Shift + . to show hidden files when selecting them.
+   You can also create a file named .nojekyll directly in GitHub, containing one blank line.
+6. Open repository Settings > Pages. Choose Deploy from a branch, then your branch
+   (usually main), choose /(root), and Save. Wait for the deployment to complete.
+7. Open the published address shown in Pages settings. Use the menu to open Books.
+   Book addresses use #/resources/books so refreshing works on GitHub Pages.
+
+CHECK THE PUBLISHED SITE
+Open a book, try Next and Download, then refresh the page.
+If the repository contains an older version, replace conflicting files with this version.
+Do not upload your old node_modules, dist folder wrapper, .env or old large ZIP.
+
+COMPRESSION
+Photos were resized and compressed. Recordings retain their full duration and use
+mono audio optimized for speech. Larger book images were compressed, and a few
+very large PDFs were converted to screen-resolution pages. All pages are retained.
+Text selection/search and high-zoom detail may be reduced in those converted books.
+Your original full-resolution source files were not changed during this compression.
+
+VERIFICATION
+Production build passed. All 149 relative book URLs resolve. All 144 PDFs opened,
+with page counts matching the originals. First, middle and last pages of every
+changed PDF were rendered and compared. Audio durations match the originals.
+Every upload file is below 25 MiB. Live GitHub Pages deployment was not performed.
+
+GitHub upload limits:
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+GitHub Pages settings:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
