@@ -1,0 +1,12 @@
+LATEST WEBSITE — WHITE CENTERS
+
+Open this newly extracted SY5-LATEST-WEBSITE folder.
+The older extracted folder named SY5-GitHub-ready may contain a previous design.
+
+The Centers page has a plain white background, compact cards, white names in
+burgundy boxes, no location icons above names, no top Our Centers badge, and
+the three Ashrams in the requested order. All latest contact changes are included.
+
+Upload this folder's CONTENTS to GitHub, keeping index.html at repository root.
+Include .nojekyll. Do not upload the ZIP itself.
+The full editable source is in SY5-LATEST-SOURCE-white-centers.zip.
