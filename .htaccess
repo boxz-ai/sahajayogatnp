@@ -1,0 +1,16 @@
+# PDF.js workers are JavaScript modules, including on shared Apache hosting.
+<IfModule mod_mime.c>
+  AddType application/javascript .mjs
+  AddType application/pdf .pdf
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Missing assets must return 404 rather than the application's HTML.
+  RewriteRule ^(?:assets|books|audio|pdfjs)/ - [L]
+  RewriteRule . index.html [L]
+</IfModule>
